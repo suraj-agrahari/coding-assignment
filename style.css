@@ -19,29 +19,29 @@ header{
 nav {
     display: flex; /* sets the display property of the nav element to flex */
     justify-content: space-between; /* horizontally distributes the child elements of nav with space between each element */
-    margin-right: 20px; /* sets a right margin of 20 pixels on the nav element */
+    margin-right: 20px; 
 }
 
 .nav-list {
-    display: flex; /* sets the display property of the .nav-list class to flex */
+    display: flex; 
     gap: 10px; /* sets the gap (or space) between the child elements of .nav-list to 10px */
     align-content: center; /* aligns the flex container's lines (if there are multiple lines) along the vertical axis, in this case centering the items vertically */
 }
 
 
 .nav-list a {
-    font-weight: 700; /* sets the font weight of the anchor elements inside .nav-list to 700 (bold) */
-    font-size: 18px; /* sets the font size of the anchor elements inside .nav-list to 18px */
-    line-height: 23px; /* sets the line height of the anchor elements inside .nav-list to 23px */
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 23px; 
     display: flex; /* sets the display property of the anchor elements inside .nav-list to flex */
     color: #b6afc6; /* sets the text color of the anchor elements inside .nav-list to #b6afc6 */
     text-decoration: none; /* removes the underline from the anchor elements inside .nav-list */
-    padding: 10px; /* adds 10 pixels of padding to the anchor elements inside .nav-list */
-    margin-right: 10px; /* adds 10 pixels of margin to the right of the anchor elements inside .nav-list */
+    padding: 10px; 
+    margin-right: 10px; 
 }
 
 .nav-list a:active {
-    color: #000000; /* sets the text color of the anchor elements inside .nav-list to black when active */
+    color: #000000; 
     background-color: red; /* sets the background color of the anchor elements inside .nav-list to red when active */
 }
 
@@ -54,28 +54,28 @@ nav {
 }
 
 .heading {
-    display: flex; /* sets the display of the heading element to flex */
+    display: flex; 
     justify-content: space-between; /* positions the child elements with space between them */
-    gap: 10px; /* adds a gap of 10 pixels between the child elements */
+    gap: 10px; 
 }
 
 
 .heading-img {
-    display: flex; /* sets the display of the heading image element to flex */
+    display: flex; 
     padding: 10px 0px 0px 100px; /* adds padding to the top and left of the image element */
 }
 
 .heading-title {
-    display: flex; /* sets the display of the heading title element to flex */
-    width: 426px; /* sets the width of the title element to 426 pixels */
-    height: 112px; /* sets the height of the title element to 112 pixels */
+    display: flex; 
+    width: 426px; 
+    height: 112px; 
     padding: 100px 0px 0px 200px; /* adds padding to the top and left of the title element */
     flex-direction: column; /* sets the flex-direction to column */
     align-items: center; /* centers the child elements vertically */
     text-align: left; /* aligns the text to the left */
-    font-weight: 700; /* sets the font weight to 700 */
-    font-size: 48px; /* sets the font size to 48 pixels */
-    line-height: 56px; /* sets the line-height to 56 pixels */
+    font-weight: 700; 
+    font-size: 48px; 
+    line-height: 56px; 
 }
 
 
@@ -119,13 +119,13 @@ nav {
 
 /* Set the style for the button when it's hovered over */
 .consult-button:hover{
-    /* Dim the button by reducing its brightness */
-    filter: brightness(0.8); 
+    
+    filter: brightness(0.8); /* Dim the button by reducing its brightness */
 }
 
 
 .service{
-    display: flex;  /* Use flexbox to position items */
+    display: flex;  
     flex-direction: column;  /* Stack items vertically */
     justify-content: center;  /* Center items vertically */
     align-items: center;  /* Center items horizontally */
@@ -133,25 +133,25 @@ nav {
 }
 
 .service-title{
-    display: flex;  /* Use flexbox to position items */
+    display: flex;  
     margin-top: 100px;  /* Add margin to the top of the container */
-    font-weight: 700;  /* Set font weight to 700 */
-    font-size: 36px;  /* Set font size to 36 pixels */
+    font-weight: 700;  
+    font-size: 36px;  
 }
 
 .service-content{
-    display: flex;  /* Use flexbox to position items */
+    display: flex;  
     color: #7d7987;  /* Set the text color to a shade of gray */
-    font-weight: 300;  /* Set font weight to 300 */
-    font-size: 18px;  /* Set font size to 18 pixels */
-    line-height: 30px;  /* Set line height to 30 pixels */
+    font-weight: 300;  
+    font-size: 18px;  
+    line-height: 30px;  
     text-align: center;  /* Center align text */
 }
 
 
 .logo{
-    display: flex; /* Use flexbox to create a row layout */
-    flex-direction: row; /* Set the direction of the flexbox to row */
+    display: flex; 
+    flex-direction: row; 
 }
 
 .column {
@@ -159,15 +159,15 @@ nav {
 }
 
 .card {
-    display: flex; /* Use flexbox to create a column layout */
+    display: flex; 
     flex-direction: column; /* Set the direction of the flexbox to column */
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4); /* Add a box shadow to the element */
     border-radius: 20px; /* Add a rounded border to the element */
-    padding: 50px 0px 0px 50px; /* Add padding to the element */
-    background-color: #ffffff; /* Set the background color of the element */
+    padding: 50px 0px 0px 50px; 
+    background-color: #ffffff; 
     border-radius: 10px; /* Add a rounded border to the element */
-    width: 350px; /* Set the width of the element */
-    height: 354px; /* Set the height of the element */
+    width: 350px; 
+    height: 354px; 
 }
 
 .card-title {
