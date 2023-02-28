@@ -1,88 +1,83 @@
 @font-face {
-    font-family: 'Mulish';
+    font-family: 'Mulish'; /* sets the name of the font family to Mulish */
     src: url(https://fonts.gstatic.com/s/mulish/v1/0nksC9PmuvoxAIX2CFsVbM4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-    /* adding mulish font  */
+    /* specifies the URL of the font file in WOFF2 format */
+    /* you can add more sources for different font file formats to ensure browser compatibility */
   }
   
-body{
-   
-    
-    font-style: normal;
-    font-family: 'Mulish', sans-serif;
-    
-
+  
+  body {
+    font-style: normal; /* sets the font style of the body text to normal */
+    font-family: 'Mulish', sans-serif; /* sets the font family of the body text to Mulish, a custom font imported using @font-face, or a sans-serif font if Mulish is not available */
 }
+
 
 header{
     padding: 20px 10px 0px 200px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-
+nav {
+    display: flex; /* sets the display property of the nav element to flex */
+    justify-content: space-between; /* horizontally distributes the child elements of nav with space between each element */
+    margin-right: 20px; /* sets a right margin of 20 pixels on the nav element */
 }
 
-.nav-list{
-    display: flex;
-    gap : 10px;
-    align-content: center;
-   
+.nav-list {
+    display: flex; /* sets the display property of the .nav-list class to flex */
+    gap: 10px; /* sets the gap (or space) between the child elements of .nav-list to 10px */
+    align-content: center; /* aligns the flex container's lines (if there are multiple lines) along the vertical axis, in this case centering the items vertically */
 }
+
 
 .nav-list a {
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-
-    display: flex;
-    color: #b6afc6;
-
-    text-decoration: none; /* Remove the underline from the links */
-    padding: 10px; /* Add some padding to the links */
-    margin-right: 10px; /* Add some margin to the right of the links */
-}
-.nav-list a:active{
-    color: #000000;
-    background-color: red;
+    font-weight: 700; /* sets the font weight of the anchor elements inside .nav-list to 700 (bold) */
+    font-size: 18px; /* sets the font size of the anchor elements inside .nav-list to 18px */
+    line-height: 23px; /* sets the line height of the anchor elements inside .nav-list to 23px */
+    display: flex; /* sets the display property of the anchor elements inside .nav-list to flex */
+    color: #b6afc6; /* sets the text color of the anchor elements inside .nav-list to #b6afc6 */
+    text-decoration: none; /* removes the underline from the anchor elements inside .nav-list */
+    padding: 10px; /* adds 10 pixels of padding to the anchor elements inside .nav-list */
+    margin-right: 10px; /* adds 10 pixels of margin to the right of the anchor elements inside .nav-list */
 }
 
-.active{
-    color: #000000 !important;
-     /* ! important overrides other and makes this prority */
-
-}
-.nav-list a:hover{
-    
- /* Change the background color of the links on hover */
-    color:#1F1534;
-    /* Change the color of the links on hover */
-}
-.heading{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.nav-list a:active {
+    color: #000000; /* sets the text color of the anchor elements inside .nav-list to black when active */
+    background-color: red; /* sets the background color of the anchor elements inside .nav-list to red when active */
 }
 
-.heading-img{
-    display: flex;
-    padding: 10px 0px 0px 100px
+.active {
+    color: #000000 !important; /* sets the text color of the .active class to black with !important, overriding other color declarations */
 }
-.heading-title{
-    display: flex;
-    width: 426px;
-    height: 112px;
-    padding: 100px 0px 0px 200px;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
 
+.nav-list a:hover {
+    color: #1F1534; /* changes the text color of the anchor elements inside .nav-list to #1F1534 on hover */
 }
+
+.heading {
+    display: flex; /* sets the display of the heading element to flex */
+    justify-content: space-between; /* positions the child elements with space between them */
+    gap: 10px; /* adds a gap of 10 pixels between the child elements */
+}
+
+
+.heading-img {
+    display: flex; /* sets the display of the heading image element to flex */
+    padding: 10px 0px 0px 100px; /* adds padding to the top and left of the image element */
+}
+
+.heading-title {
+    display: flex; /* sets the display of the heading title element to flex */
+    width: 426px; /* sets the width of the title element to 426 pixels */
+    height: 112px; /* sets the height of the title element to 112 pixels */
+    padding: 100px 0px 0px 200px; /* adds padding to the top and left of the title element */
+    flex-direction: column; /* sets the flex-direction to column */
+    align-items: center; /* centers the child elements vertically */
+    text-align: left; /* aligns the text to the left */
+    font-weight: 700; /* sets the font weight to 700 */
+    font-size: 48px; /* sets the font size to 48 pixels */
+    line-height: 56px; /* sets the line-height to 56 pixels */
+}
+
 
 .heading-content{
     
@@ -94,164 +89,189 @@ nav{
     font-weight: 300;
     font-size: 21px;
     line-height: 32px;
-
-
 }
 
 .consult-button{
-    
+    /* Set width and height for the button */
     width: 200px;
     height: 60px;
+    
+    /* Add top margin to the button */
     margin-top: 50px;
+    
+    /* Set background color and border radius */
     background-color: #458FF6;
     border-radius: 50px;
+    
+    /* Add padding and remove border */
     padding: 10px 30px ;
     border: 0px;
+    
+    /* Set text color and font properties */
     color: white;
-    transition: filter 0.3s ease-in-out;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
     
+    /* Add transition effect */
+    transition: filter 0.3s ease-in-out;
 }
-.consult-button:hover{
-    filter: brightness(0.8); /* Dim the button by reducing its brightness */
 
-  
+/* Set the style for the button when it's hovered over */
+.consult-button:hover{
+    /* Dim the button by reducing its brightness */
+    filter: brightness(0.8); 
 }
+
 
 .service{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 200px;
+    display: flex;  /* Use flexbox to position items */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;  /* Center items vertically */
+    align-items: center;  /* Center items horizontally */
+    margin: 0 200px;  /* Add margin to the left and right of the container */
 }
+
 .service-title{
-    display: flex;
-    margin-top: 100px;
-    font-weight: 700;
-    font-size: 36px;
+    display: flex;  /* Use flexbox to position items */
+    margin-top: 100px;  /* Add margin to the top of the container */
+    font-weight: 700;  /* Set font weight to 700 */
+    font-size: 36px;  /* Set font size to 36 pixels */
 }
+
 .service-content{
-    display: flex;
-    color: #7d7987;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
+    display: flex;  /* Use flexbox to position items */
+    color: #7d7987;  /* Set the text color to a shade of gray */
+    font-weight: 300;  /* Set font weight to 300 */
+    font-size: 18px;  /* Set font size to 18 pixels */
+    line-height: 30px;  /* Set line height to 30 pixels */
+    text-align: center;  /* Center align text */
 }
+
 
 .logo{
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Use flexbox to create a row layout */
+    flex-direction: row; /* Set the direction of the flexbox to row */
 }
+
 .column {
-    width: fit-content;
+    width: fit-content; /* Set the width of the element to fit its contents */
 }
+
 .card {
-    display: flex;
-    
-    flex-direction: column;
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    border-radius: 20px;
-    padding: 50px 0px 0px 50px;
-    /* text-align: center; */
-    background-color: #ffffff;
-    border-radius: 10px;
-
-
-    width: 350px;
-    height: 354px;
+    display: flex; /* Use flexbox to create a column layout */
+    flex-direction: column; /* Set the direction of the flexbox to column */
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4); /* Add a box shadow to the element */
+    border-radius: 20px; /* Add a rounded border to the element */
+    padding: 50px 0px 0px 50px; /* Add padding to the element */
+    background-color: #ffffff; /* Set the background color of the element */
+    border-radius: 10px; /* Add a rounded border to the element */
+    width: 350px; /* Set the width of the element */
+    height: 354px; /* Set the height of the element */
 }
+
 .card-title {
+    /* Set the width and height of the card title */
     width: 350px;
-    height: 354px;
+    height: 56px;
+    /* Set the font weight, size, and line height of the card title */
     font-weight: 700;
     font-size: 24px;
     line-height: 56px;
-    height: 56px;
+    /* Add top margin to the card title */
     margin-top: 20px;
 }
+
 .card-description {
-    
+    /* Set the color of the card description */
     color: #7d7987;
+    /* Set the width and height of the card description */
     width: 266px;
     height: 84px;
-    
+    /* Set the font weight, size, and line height of the card description */
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
-}
-
+} 
 
 
 .service-data{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex;/* Set the display property of .service-data to flex */
+    flex-wrap: wrap; /* Set flex-wrap property to wrap, so that the items will wrap onto new lines if they exceed the container width */
+    gap: 20px;/* Set the gap between the flex items to 20 pixels */
 }
 
-.healthcare{
+
+/* Create a flex container with the class 'healthcare' */
+.healthcare {
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  /* Distribute the child elements with equal space between them */
+}
+
+/* Select an element with the class 'healthcare-img' */
+.healthcare-img {
     
-}
-.healthcare-img{
     margin-top: 300px;
-    padding-left: 100px;
+    padding-left: 100px;/* Add a padding of 100 pixels on the left */
 }
-.healthcare-title{
+
+/* Select an element with the class 'healthcare-title' */
+.healthcare-title {
+    
     display: flex;
     margin-top: 250px;
-    flex: 0.6;
+    flex: 0.6;/* Set the flex property to 0.6, which takes up 60% of the available space */
     flex-direction: column;
     font-weight: 700;
     font-size: 36px;
     line-height: 56px;
-
     width: 481px;
     height: 112px;
-    
 }
 
-.healthcare-content{
+/* Select an element with the class 'healthcare-content' */
+.healthcare-content {
+    
     display: flex;
     color: #7d7987;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
 }
-.Learnmore-button{
+
+/* Select an element with the class 'Learnmore-button' */
+.Learnmore-button {
+ 
     width: 200px;
     height: 60px;
-    border: 1.6px solid #458FF6;
-    border-radius: 55px;
+    border: 1.6px solid #458FF6; /* Set the border to 1.6 pixels wide, solid, and colored #458FF6 */
+    border-radius: 55px; /* Set the border-radius to 55 pixels to create rounded corners */
     background-color: white;
-        
     color: #458FF6;
-    line-height: 60px;
+    line-height: 60px;/* Set the line-height to 60 pixels to vertically center the text */
     font-weight: 700;
     font-size: 18px;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;/* Add a transition effect on the box-shadow property with a duration of 0.3 seconds */
 }
 
-.Learnmore-button:hover{
-    box-shadow: 0 0 1px 1px #458FF6;; /* Add the glow effect */
-  
+/* Select an element with the class 'Learnmore-button' when the user hovers over it */
+.Learnmore-button:hover {
+    box-shadow: 0 0 1px 1px #458FF6;/* Add a box-shadow effect with 1 pixel of blur and a color of #458FF6 */
 }
 
+/* Select an element with the class '.mobile-apps ' */
 .mobile-apps{
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
     
 }
+/* Select an element with the class 'mobile-apps-title' */
 .mobile-apps-title{
     margin-top: 100px;
     display: flex;
-    flex: 0.6;
+    flex: 0.6;/* Take up 60% of available horizontal space */
     flex-direction: column;
     font-weight: 700;
     font-size: 36px;
@@ -259,7 +279,7 @@ nav{
     padding:100px 0px 0px 200px;
 
 }
-.mobile-apps-content{
+.mobile-apps-content{/* Select an element with the class 'mobile-apps-content' */
     display: flex;
     color: #7d7987;
     font-weight: 300;
@@ -275,7 +295,7 @@ nav{
     margin-top: 50px;
     width: 200px;
     height: 60px;
-    border: 1.6px solid #458FF6;
+    border: 1.6px solid #458FF6;/* Sets the border properties of the button */
     border-radius: 55px;
     background-color: white;
         
@@ -283,16 +303,16 @@ nav{
     line-height: 60px;
     font-weight: 700;
     font-size: 18px;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out; /* Adds transition effects to the button */
 
 }
 
 .Download-button:hover{
-    box-shadow: 0 0 1px 1px #458FF6;; /* Add the glow effect */
+    box-shadow: 0 0 1px 1px #458FF6; /* Adds a glow effect to the button when hovered */
   
 }
 .Download-button img{
-    padding-left: 10px;
+    padding-left: 10px;/* Adds 10 pixels of padding to the left of the image */
 }
 
 .element{
@@ -304,19 +324,19 @@ nav{
 
 .article{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center; /* Vertically center the flex items */
+    align-items: center; /* Horizontally center the flex items */
     margin: 0 200px;
 }
 .column {
-    width: fit-content;
+    width: fit-content;/* Set the width of the container to fit its content */
 }
 .article-content{
     display: flex;
     padding: 16px;
-    flex-direction: column;
-    text-align: justify;
+    flex-direction: column;/* Set the main axis of the flex container to be vertical */
+    text-align: justify;/* Justify the text inside the container */
     
 }
 
@@ -329,14 +349,14 @@ nav{
 
 .article-data{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;/* Set the main axis of the flex container to be horizontal */
     gap: 30px;
 }
 .article-card {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/* Add a box shadow to the element */
     width: 350px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -344,24 +364,20 @@ nav{
 }
 
 .article-card-title {
-    color: #000000;
+     color: #000000; /*Set the font color to black */
     font-size: 21px;
     line-height: 32px;
     margin-top: 20px;
-    font-weight: 700;
-
-    
-    
+    font-weight: 700;  
 }
+
 .article-card-description {
     
     color: #7d7987;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
-    justify-content: center;
-
-    
+    justify-content: center;   /* Center the content within the container horizontally */
 }
 .article-read{
     color: #4089ED;
@@ -373,12 +389,14 @@ nav{
 
 .View-button{
     
+    /* Center the content horizontally and vertically */
     justify-content: center;
     align-items: center;
+
     margin-top: 40px;
 
-    border: 1.4px solid #458FF6;
-    border-radius: 55px;
+    border: 1.4px solid #458FF6;  /* Add border with thickness and color */
+    border-radius: 55px; /* Add rounded corners to the button */
     background-color: white;
         
     color: #458FF6;
@@ -388,11 +406,13 @@ nav{
 
     width: 200px;
     height: 56px;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out; /* Add a box-shadow transition with a duration of 0.3 seconds */
 }
+
+/* Add hover effect */
 .View-button:hover{
-        box-shadow: 0 0 1px 1px #458FF6;; /* Add the glow effect */
-        cursor: pointer;
+        box-shadow: 0 0 1px 1px #458FF6; /* Add a box-shadow to create a glow effect */
+        cursor: pointer; /* Change the cursor to a pointer */
       
 }
 .testimonials{
@@ -405,12 +425,12 @@ nav{
 
 .container {
     display: flex;
-    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);/* Apply a linear gradient background color */
     color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
+    justify-content: center;/* Center the child elements horizontally */
+    align-items: center;/* Center the child elements vertically */
+    flex-direction: column;/* Stack the child elements vertically */
+    border-radius: 20px;/* Add rounded corners to the container */
     margin-top: 250px;  
     width: 1120px;
     height: 425px;
@@ -423,8 +443,10 @@ nav{
 }
 
 .testimonials-elements{
-    padding: 0px;
+    padding: 0px;/* sets the padding around the testimonials element to 0 pixels */
 }
+
+/* Select the element with class "box" */
 .box {
     display: flex;
     width: 1120px;
@@ -432,40 +454,41 @@ nav{
     left: 240px;
     top: 3726px;
     
-    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-    border-radius: 20px;
-    overflow: hidden;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);/* Set the background to a linear gradient */
+    border-radius: 20px;/* Set the border radius of the box */
+    overflow: hidden;  /* Hide any content that overflows the box */
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+
+/* Select the element with class "box-authorname" */
 .box-authorname{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px;  /* Set the padding of the box */
     font-weight: 700;
     font-size: 22px;
     line-height: 48px;
 
 }
+
 .box img {
     display:flex;
-    object-fit: cover;
-    justify-content: center;
-    padding-left: 0px;
+    object-fit: cover;/* Scale the image while preserving aspect ratio to cover the entire box */
+    justify-content: center;/* Horizontally center the image */
+    padding-left: 0px;/* Remove left padding */
     width: 180px;
     height: 180px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    object-position: center;
-
-    
+    border-radius: 50%;/* Make the corners of the image round to create a circular shape */
+    border: 3px solid #fff;/* Add a white border with a thickness of 3px around the image */
+    object-position: center;   /* Set the position of the image to the center */
 }
 
 .box-content{
     display: flex;
-    text-align: center;
+    text-align: center;/* Center align the text within the box */
     padding: 10px 10px;
     font-weight: 400;
     font-size: 19px;
@@ -478,12 +501,9 @@ nav{
     margin-top: 30px;
 }
 
-
-
-
 .Contact{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     font-weight: 300;
@@ -505,14 +525,16 @@ nav{
     line-height: 23px
 }
 
-  /* Style the form */
+/* Set the width, display and margin of the form element */
   form {
     width: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/* Make the layout vertical */
     margin-top: 40px;
 
   }
+
+/* Style the label element */
 form label{
     font-weight: 300;
     font-size: 16px;
@@ -524,13 +546,12 @@ form label{
   textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #7D7987;
-    ;
+    border: 1px solid #7D7987;/* Add a border of 1 pixel with a color of #7D7987 to the input fields */
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box;/* Set the box sizing of the input fields to border-box */
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: vertical;/* Allow the textarea to be vertically resizable */
   }
 
   /* Style the submit button */
@@ -538,24 +559,24 @@ form label{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 40px;
-    margin: auto;
+    padding: 10px 40px;/* Add padding to the submit button */
+    margin: auto;/* Center the submit button */
 
-    border: 1.4px solid #458FF6;
-    border-radius: 55px;
+    border: 1.4px solid #458FF6; /* Add a border with color */
+    border-radius: 55px;/* Round the corners of the submit button */
     background-color: white;
     color: #458FF6;
     
     font-weight: 700;
     font-size: 18px;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;/* Add a transition for the box shadow effect */
 
     line-height: 40px;
   }
 
   input[type="submit"]:hover {
-    box-shadow: 0 0 1px 1px #458FF6;; /* Add the glow effect */
-    cursor: pointer;
+    box-shadow: 0 0 1px 1px #458FF6;/* Add a glow effect on hover */
+    cursor: pointer;/* Change cursor to pointer on hover */
   }
 
   /* Style the labels */
@@ -578,14 +599,14 @@ form label{
   }
    
 
-  
+  /* Style the Trafalgar content */
   .Trafalgar-content{
   
     flex-basis: 40%;
     text-align: center;
   }
 
-  
+/* Style the image inside Trafalgar content */  
   .Trafalgar-content img{
   
     display: flex;
@@ -593,10 +614,12 @@ form label{
     padding: 10px 0px 0px 100px;
   }
 
+  /* Style the heading inside Trafalgar content */
   .Trafalgar-content h1{
     padding: 10px 0px 0px 10px;
   }
  
+/* Style the Company, Region, and Help content */
   .Company-content,
   .Region-content,
   .Help-content{
@@ -605,7 +628,7 @@ form label{
   }
 
 
-  
+/* Style the links inside Company, Region, and Help content */  
   .Company-content a,
   .Region-content a,
   .Help-content a {
@@ -617,21 +640,24 @@ form label{
         flex-direction: column;
   }
 
+  
+/* Style the horizontal rule */
   hr{
     border: 1px solid black;
     border-radius: 10px;
   }
-
+/* Style the "scroll to top" button */
   #scrollToTopBtn {
-    position: fixed;
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-    z-index: 9999;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
+    
+    position: fixed; /* Set the position to fixed */
+    top: 50%; /* Align to the vertical center of the viewport */
+    right: -20px; /* Move the button off-screen to the right */
+    transform: translateY(-50%); /* Center align the button vertically */
+    z-index: 9999; /* Set a high z-index value */
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    background-color: transparent; /* Set the background color to transparent */
+    cursor: pointer; /* Change the cursor to a pointer */
   }
 
   

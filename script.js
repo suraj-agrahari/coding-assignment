@@ -1,13 +1,15 @@
+// Get the "scrollToTopBtn" element by its ID
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
+// Add a scroll event listener to the window object
 window.addEventListener("scroll", function () {
-	
   // If user scrolls down more than 20 pixels, show the button
   if (window.pageYOffset > 20) {
     scrollToTopBtn.style.display = "block";
   } 
 });
 
+// Add a click event listener to the "scrollToTopBtn" element
 scrollToTopBtn.addEventListener("click", function() {
   // Scroll to top smoothly
   window.scrollTo({
@@ -16,8 +18,9 @@ scrollToTopBtn.addEventListener("click", function() {
   });
 });
 
-let serviceData = document.querySelector('.service-data');
-const serviceDataToShow = [
+
+let serviceData = document.querySelector('.service-data');// Get the "serviceData" element by its class name
+const serviceDataToShow = [ // Define an array of objects that contain data for each service
 	{
 		id: 1,
 		image: 'Search-doctor.svg',
@@ -60,7 +63,7 @@ const serviceDataToShow = [
 		description: 'Track and save your medical history and health data ',
 	},
 ];
-const mappedServiceData = serviceDataToShow.map((data) => {
+const mappedServiceData = serviceDataToShow.map((data) => { // Map the data for each service to a HTML string and store it in an array
 	return `<div class="card" key = ${data.id}>
 					<img
 						src= ${"./images/"+data.image}
@@ -73,8 +76,11 @@ const mappedServiceData = serviceDataToShow.map((data) => {
 
 					</p>
 				</div>`;
+	
+	
+	
 });
-serviceData.innerHTML = mappedServiceData;
+serviceData.innerHTML = mappedServiceData; // Set the innerHTML of the "serviceData" element to the mappedServiceData array
 
 
 
