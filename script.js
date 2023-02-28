@@ -1,3 +1,21 @@
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", function () {
+	
+  // If user scrolls down more than 20 pixels, show the button
+  if (window.pageYOffset > 20) {
+    scrollToTopBtn.style.display = "block";
+  } 
+});
+
+scrollToTopBtn.addEventListener("click", function() {
+  // Scroll to top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
 let serviceData = document.querySelector('.service-data');
 const serviceDataToShow = [
 	{
@@ -57,3 +75,9 @@ const mappedServiceData = serviceDataToShow.map((data) => {
 				</div>`;
 });
 serviceData.innerHTML = mappedServiceData;
+
+
+
+
+
+

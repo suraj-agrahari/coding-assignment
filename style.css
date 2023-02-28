@@ -622,3 +622,16 @@ form label{
     border-radius: 10px;
   }
 
+  #scrollToTopBtn {
+    position: fixed;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  
