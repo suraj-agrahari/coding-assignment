@@ -81,9 +81,3 @@ const mappedServiceData = serviceDataToShow.map((data) => { // Map the data for 
 	
 });
 serviceData.innerHTML = mappedServiceData; // Set the innerHTML of the "serviceData" element to the mappedServiceData array
-
-
-
-
-
-
