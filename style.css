@@ -1,32 +1,36 @@
 @font-face {
     font-family: 'Mulish';
     src: url(https://fonts.gstatic.com/s/mulish/v1/0nksC9PmuvoxAIX2CFsVbM4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-    /* add other font formats if needed */
+    /* adding mulish font  */
   }
   
 body{
-    /* padding: 0 50px 0 100px; */
+   
     
     font-style: normal;
     font-family: 'Mulish', sans-serif;
-    /* margin: 0 50px 0 100px; */
+    
 
 }
+
 header{
     padding: 20px 10px 0px 200px;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
 
 }
+
 .nav-list{
     display: flex;
     gap : 10px;
     align-content: center;
    
 }
+
 .nav-list a {
 
     font-weight: 700;
@@ -35,7 +39,7 @@ nav{
 
     display: flex;
     color: #b6afc6;
-    ; /* Set the default color of the links */
+
     text-decoration: none; /* Remove the underline from the links */
     padding: 10px; /* Add some padding to the links */
     margin-right: 10px; /* Add some margin to the right of the links */
@@ -54,8 +58,7 @@ nav{
     
  /* Change the background color of the links on hover */
     color:#1F1534;
-    ;
-    ; /* Change the color of the links on hover */
+    /* Change the color of the links on hover */
 }
 .heading{
     display: flex;
@@ -79,9 +82,8 @@ nav{
     font-size: 48px;
     line-height: 56px;
 
-
-
 }
+
 .heading-content{
     
     width: 445px;
